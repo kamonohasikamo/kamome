@@ -1,0 +1,4 @@
+suke,400,0
+anana,0,0
+quit,200,0
+rururu,0,0
