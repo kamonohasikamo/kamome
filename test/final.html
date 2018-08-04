@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+    <div class="col-xs-2">
+
+    <h2>コメントペーパー</h2>
+    <h3>講義回数</h3>
+        <form action = "insert.php" method="post">
+        <input name="kouginum" type="text"></input>
+    <h3>学籍番号</h3>
+        <form action = "insert.php" method="post">
+        <input name="gakusekinum" type="text"></input>
+    <h3>氏名</h3>
+        <form action = "insert.php" method="post">
+        <input name="name" type="text"></input>        
+    <h3>クラス名</h3>
+        <form action = "insert.php" method="post">
+        <input name="classname" type="text"></input>
+    <h3>日付</h3>
+        <form action = "insert.php" method="post">
+        <input name="day" type="text"></input>
+    <h3>アンケート</h3>
+        <p>5段階で評価してください。</p>
+        <p>1.とても当てはまる、2.少し当てはまる、3.どちらでもない、4.あまり当てはまらない、5.当てはまらない</p>
+        <h4>[1]講義内容を理解できた</h4>
+            <form action = "insert.php" method="post">
+            <input name="anketo1" type="text"></input>
+        <h4>[2]講義内容に興味が湧いた</h4>
+            <form action = "insert.php" method="post">
+            <input name="anketo2" type="text"></input>
+        <h4>[3]講義内容へ満足できた</h4>
+            <form action = "insert.php" method="post">
+            <input name="anketo3" type="text"></input>
+        <h4>[4]授業スタイルを継続していい</h4>
+            <form action = "insert.php" method="post">
+            <input name="anketo4" type="text"></input>
+
+    <h3>感想など(200字以内)</h3>
+            <form action = "insert.php" method="post">
+            <input name="kansou" type="text"></input>
+            <br>
+            <input type="submit">
+            <input type="button" onclick="location.href='final_index.html?bk=1'" value="コメントペーパー参照ページ" />
+           
+        </form>
+
+
+
+        </div>
+        </div>
+    </body>
+</html>
+
