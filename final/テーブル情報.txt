@@ -1,0 +1,51 @@
+列名　　　　　：　概要　　　：　　例
+kouginum  　　　　: 講義回数　：　第1回なら1
+gakusekinum　　：学籍番号　：　99999999
+name　　　　　：　名前　　　：　○○○○（氏名）
+classname   :　　　クラス名（科目名）：　講義名（クラス名）
+day　　　　　：　日付　　　：　20180707
+anketo1~4   :  アンケート　：　１〜５の数値
+kansou　　　：　感想　　　　：　文字列(２００字以内とする）
+
+
+CREATE TABLE data(
+  kouginum int,
+  gakusekinum int,
+  name nchar(20),
+  classname nchar(100),
+  day datetime,
+  anketo1 int,
+  anketo2 int,
+  anketo3 int,
+  anketo4 int,
+  kansou nchar(200)
+);
+
+INSERT INTO data(
+  kouginum,
+  gakusekinum,
+  name,
+  classname,
+  day,
+  anketo1,
+  anketo2,
+  anketo3,
+  anketo4,
+  kansou
+)VALUE(
+  "2",
+  "99999999",
+  "○○○○",
+  "○○〇〇○○○（講義名）",
+  "20180723",
+  "1",
+  "1",
+  "1",
+  "1",
+  "まあまあです。"
+);
+
+
+
+
+

@@ -1,0 +1,12 @@
+<?php
+  try{
+  $sql = new PDO('mysql:host=localhost;dbname=final;charset=utf8','root','suke1002');
+  print '接続に成功しました';
+  foreach ($sql->query('select * from data') as $row) {
+    echo "<p>$row[kouginum]:$row[gakusekinum]:$row[name]:$row[day]:$row[anketo1]$row[anketo2]:$row[anketo3]:$row[anketo4]:$row[kansou]</p>";
+}
+  } catch( PDOException $e){
+    print "接続エラー：{$e->getMessage()}";
+  }
+  $sql=null;
+?>
